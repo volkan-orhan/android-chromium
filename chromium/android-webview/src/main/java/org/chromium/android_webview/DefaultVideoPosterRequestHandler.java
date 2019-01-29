@@ -68,7 +68,7 @@ public class DefaultVideoPosterRequestHandler {
         }
     }
 
-    private static final String TAG = "DefaultVideoPosterRequestHandler";
+    private static final String TAG = "DefVidPstrReqHndlr";
     private String mDefaultVideoPosterURL;
     private AwContentsClient mContentClient;
 

@@ -14,6 +14,7 @@ import android.os.ParcelFileDescriptor;
 import android.util.Log;
 
 import java.io.File;
+import java.io.IOException;
 import java.nio.ByteBuffer;
 
 import org.chromium.base.CalledByNative;
@@ -84,7 +85,12 @@ class WebAudioMediaCodecBridge {
               " Format: " + format);
 
         // Create decoder
-        MediaCodec codec = MediaCodec.createDecoderByType(mime);
+        MediaCodec codec = null;
+        try {
+            codec = MediaCodec.createDecoderByType(mime);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         codec.configure(format, null /* surface */, null /* crypto */, 0 /* flags */);
         codec.start();
 

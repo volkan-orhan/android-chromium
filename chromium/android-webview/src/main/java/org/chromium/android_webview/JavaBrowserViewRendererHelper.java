@@ -20,7 +20,7 @@ import org.chromium.content.common.TraceEvent;
  */
 @JNINamespace("android_webview")
 public class JavaBrowserViewRendererHelper {
-    private static final String LOGTAG = "JavaBrowserViewRendererHelper";
+    private static final String LOGTAG = "JavaBrwsrViewRndrrHlpr";
 
     // Until the full HW path is ready, we limit to 5 AwContents on the screen at once.
     private static LruCache<Integer, Bitmap> sBitmapCache = new LruCache<Integer, Bitmap>(5);

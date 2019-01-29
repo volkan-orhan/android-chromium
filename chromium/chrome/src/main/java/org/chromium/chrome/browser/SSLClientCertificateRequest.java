@@ -27,7 +27,7 @@ import org.chromium.base.ThreadUtils;
 class SSLClientCertificateRequest extends AsyncTask<Void, Void, Void>
         implements KeyChainAliasCallback {
 
-    static final String TAG = "SSLClientCertificateRequest";
+    static final String TAG = "SSLClientCertReq";
 
     // ClientCertRequest models an asynchronous client certificate request on the Java side. Use
     // selectClientCertificate() on the UI thread to start/create a new request, this will launch a

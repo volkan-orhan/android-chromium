@@ -22,7 +22,7 @@ import org.chromium.content.browser.ContentViewCore;
  * to specific listener interfaces.
  */
 class AwWebContentsDelegateAdapter extends AwWebContentsDelegate {
-    private static final String TAG = "AwWebContentsDelegateAdapter";
+    private static final String TAG = "AwWebContentsDlgtAdptr";
 
     final AwContentsClient mContentsClient;
     final View mContainerView;

@@ -40,7 +40,7 @@ public class AutoLoginAccountDelegate implements AccountManagerCallback<Bundle> 
     }
 
     public boolean logIn() {
-        Log.i("AutoLoginAccountDelegate", "auto-login requested for "
+        Log.i("AutoLoginAccntDlgt", "auto-login requested for "
                 + (mAccount != null ? mAccount.toString() : "?"));
 
         Account currentAccount = ChromeSigninController.get(mActivity).getSignedInUser();

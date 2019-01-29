@@ -7,6 +7,6 @@ dependencies {
   compile project(":chromium:chrome")
 }
 
-tasks.withType(Compile) {
+tasks.withType(JavaCompile) {
   compileTask -> compileTask.dependsOn(copyNativeLibsToJar)
 }

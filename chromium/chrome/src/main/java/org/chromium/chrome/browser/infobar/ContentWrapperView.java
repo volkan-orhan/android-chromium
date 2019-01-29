@@ -230,11 +230,11 @@ public class ContentWrapperView extends FrameLayout {
     public void getAnimationsForTransition(ArrayList<Animator> animators) {
         if (mViewToHide != null && mViewToShow != null) {
             ObjectAnimator hideAnimator;
-            hideAnimator = ObjectAnimator.ofFloat((Object)mViewToHide, "alpha", 1.0f, 0.0f);
+            hideAnimator = ObjectAnimator.ofFloat(mViewToHide, "alpha", 1.0f, 0.0f);
             animators.add(hideAnimator);
 
             ObjectAnimator showAnimator;
-            showAnimator = ObjectAnimator.ofFloat((Object)mViewToShow, "alpha", 0.0f, 1.0f);
+            showAnimator = ObjectAnimator.ofFloat(mViewToShow, "alpha", 0.0f, 1.0f);
             animators.add(showAnimator);
         }
     }

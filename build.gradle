@@ -1,13 +1,14 @@
-
 // pull in dependency versions
 apply from: "dependencies.gradle"
 
 buildscript {
   repositories {
+    google()
     mavenCentral()
+    jcenter()
   }
   dependencies {
-    classpath "com.android.tools.build:gradle:0.6+"
+    classpath 'com.android.tools.build:gradle:3.3.0'
   }
 }
 
@@ -16,10 +17,14 @@ allprojects {
   repositories {
     // local checked in maven repo has chromium 3rd party jars copied from chromium source tree
     // there is a bug in android-gradle which prevents serving these as file or flatDir deps
+    google()
     maven { url "${rootProject.projectDir}/chromium/.m2" }
     mavenCentral()
+    jcenter()
     // sonatype central
-    maven { url "http://oss.sonatype.org/content/repositories/snapshots/" }
+    maven {
+      url "http://oss.sonatype.org/content/repositories/snapshots/"
+    }
   }
 }
 

@@ -9,6 +9,6 @@ dependencies {
   compile project(":chromium:media")
 }
 
-tasks.withType(Compile) {
+tasks.withType(JavaCompile) {
   compileTask -> compileTask.dependsOn(copyNativeLibsToJar)
 }

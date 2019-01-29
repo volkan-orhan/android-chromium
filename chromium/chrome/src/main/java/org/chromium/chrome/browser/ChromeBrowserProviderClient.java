@@ -18,7 +18,7 @@ import java.io.Serializable;
  * Exposes the custom API methods for ChromeBrowserProvider.
  */
 public class ChromeBrowserProviderClient {
-    private static final String TAG = "ChromeBrowserProviderClient";
+    private static final String TAG = "ChromeBrwsrPrvdrClnt";
 
     // Returned by some of the methods in this class.
     public static final long INVALID_BOOKMARK_ID = ChromeBrowserProvider.INVALID_BOOKMARK_ID;

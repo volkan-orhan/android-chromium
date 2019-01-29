@@ -23,7 +23,7 @@ import org.chromium.chrome.R;
 import org.chromium.ui.WindowAndroid;
 
 public class JavascriptAppModalDialog implements DialogInterface.OnClickListener {
-    private static final String TAG = "JavascriptAppModalDialog";
+    private static final String TAG = "JavascriptAppModalDlg";
 
     private String mTitle;
     private String mMessage;

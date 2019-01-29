@@ -18,12 +18,17 @@ import org.chromium.chrome.R;
  * Form resubmission warning dialog. Presents the cancel/continue choice and fires one of two
  * callbacks accordingly.
  */
-class RepostFormWarningDialog extends DialogFragment {
+public class RepostFormWarningDialog extends DialogFragment {
     // Warning dialog currently being shown, stored for testing.
     private static Dialog sCurrentDialog;
 
     private final Runnable mCancelCallback;
     private final Runnable mContinueCallback;
+
+    public RepostFormWarningDialog() {
+        mCancelCallback = null;
+        mContinueCallback = null;
+    }
 
     public RepostFormWarningDialog(Runnable cancelCallback, Runnable continueCallback) {
         mCancelCallback = cancelCallback;
